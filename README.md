@@ -1,8 +1,8 @@
 # MinesweeperJS
 
-[Project](https://github.com/LucasMoraesMarques/NumCalcTools/new/master?readme=1#project) - 
-[Tools](https://github.com/LucasMoraesMarques/NumCalcTools/new/master?readme=1#tools) - 
-[Images](https://github.com/LucasMoraesMarques/NumCalcTools/new/master?readme=1#images) - 
+[Project](https://github.com/LucasMoraesMarques/MinesweeperJS/blob/master/README.md#project-file_folder) - 
+[Tools](https://github.com/LucasMoraesMarques/MinesweeperJS/blob/master/README.md1#tools) - 
+[Images](https://github.com/LucasMoraesMarques/MinesweeperJS/blob/master/README.md1#images-fireworks) - 
 
 
 ## Project :file_folder:
