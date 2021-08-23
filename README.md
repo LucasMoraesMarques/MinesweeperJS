@@ -1,8 +1,8 @@
 # MinesweeperJS
 
 [Project](https://github.com/LucasMoraesMarques/MinesweeperJS/blob/master/README.md#project-file_folder) - 
-[Tools](https://github.com/LucasMoraesMarques/MinesweeperJS/blob/master/README.md1#tools) - 
-[Images](https://github.com/LucasMoraesMarques/MinesweeperJS/blob/master/README.md1#images-fireworks) - 
+[Tools](https://github.com/LucasMoraesMarques/MinesweeperJS/blob/master/README.md#tools) - 
+[Images](https://github.com/LucasMoraesMarques/MinesweeperJS/blob/master/README.md#images-fireworks) - 
 
 
 ## Project :file_folder:
