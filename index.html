@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class='container'>
+        <div class="mainMenu">
+            
+            <nav class='menu' id='menu'>
+                <h1>Minesweeper</h1>
+                <ul>
+                    <li><button class='menuBtn' onclick="manageDisplay(id_on=['menuStart'], id_off=['menu'])">Start</button></li>
+                    <li><button class='menuBtn' onclick="manageDisplay(id_on=['menuHelp'], id_off=['menu'])">Help</button></li>
+                    <li><button class='menuBtn' onclick="manageDisplay(id_on=['menuScores'], id_off=['menu'])">Scores</button></li>
+                </ul>
+            </nav>
+            
+            <div class="menu hidden" id='menuStart'>
+                <h2>Settings</h2>
+                    
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td><label class="label" for="dim" >Type the table dimension</label></td>
+                                    <td><input class="input"type="number" name="dim" id="dim" required min='10' max='15' ></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label class='label' for="level">Type the level</label></td>
+                                    <td>
+                                        <select class='input' type="number" name="level" id="level">
+                                            <option value="Easy">Easy</option>
+                                            <option value="Normal">Normal</option>
+                                            <option value="Hard">Hard</option>
+                                            <option value="God">God</option>
+                                        </select>  
+                                    </td>
+
+                                </tr>
+                            </thead>
+                            
+                        </table>
+                    
+                    <input class='menuBtn' type="button" value="Create table" onclick="createTable()">
+            </div>
+
+            <div class="menu hidden" id='menuHelp'>
+                <h2>Rules</h2>
+                <p>Here is the deal:
+                    <ul>
+                        <li>There are 4 levels</li>
+                            <ol style='padding-left: 30px;'>
+                                <li>Easy &rarr; Give a try</li>
+                                <li>Normal &rarr; Very good</li>
+                                <li>Hard &rarr; Oww, bold!</li>
+                                <li>God &rarr; F</li>
+                            </ol>
+                        <li>Everybody begins with 1000 points and its will decrease with your clicks.
+                            The winner will be the one who reveal all cells with less clicks.
+                        </li>
+                    </ul>
+                    <button class='menuBtn' onclick="manageDisplay(id_on=['menu'], id_off=['menuHelp'])">Menu</button>
+                </p>
+            </div>
+
+
+            <div class='menu hidden' id='menuScores'>
+                <h2>Scores</h2>
+                <select class='input' type="number" name="level" id="scoreSel" onchange="handleScoresSel()">
+                    <option value="Easy">Easy</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Hard">Hard</option>
+                    <option value="God">God</option>
+                </select>                
+                
+                <ol>
+                    <li>0</li>
+                    <li>0</li>
+                    <li>0</li>
+                    <li>0</li>
+                </ol>
+                <button class='menuBtn' onclick="manageDisplay(id_on=['menu'], id_off=['menuScores'])">Menu</button>
+            </div>
+
+            <div class='hidden menu endMsg' id='gameover'>
+                
+                <h2></h2>
+                <button class="menuBtn" onclick="clearScreen()">Menu</button>   
+                
+            </div>
+
+            <div class='hidden menu endMsg' id='win'>
+                
+                <h2 id='scoreWin'></h2>
+                <button class="menuBtn" onclick="clearScreen()">Menu</button>   
+                
+            </div>
+        </div>
+
+        
+
+        <div class="game hidden" id='game'>
+            
+            <div class="gameInfo hidden" id='gameInfo'>
+            </div>
+            <div class="table hidden" id="table">
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
